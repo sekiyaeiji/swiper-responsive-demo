@@ -1,3 +1,3 @@
 #!/bin/sh
 
-webpack --config conf/webpack.js -p
+webpack --mode development --config conf/webpack.js -p

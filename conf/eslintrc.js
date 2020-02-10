@@ -22,6 +22,7 @@ module.exports = {
     // use strictを許可
     'strict': 0,
     // console メソッドを警告
-    'no-console': 1
+    'no-console': 0,
+    'no-unused-vars': 0
   }
 }

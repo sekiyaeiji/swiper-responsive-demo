@@ -1,3 +1,42 @@
 @charset "utf-8";
 
 // common
+
+// swipe
+.swipe {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 30px;
+  padding: 0 30px;
+  .before,
+  .after {
+    position: absolute;
+    display: table-cell;
+    height: 100px;
+    width: 20px;
+    background-color: #ccc;
+    text-align: center;
+    vertical-align: middle;
+    top: 0;
+    font-size: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .before {
+    left: 5px;
+  }
+  .after {
+    right: 5px;
+  }
+  ul {
+    display: flex;
+    overflow-x: auto;
+  }
+  li {
+    display: inline-block;
+    margin-right: 3px;
+  }
+  img {
+    width: 100px;
+  }
+}

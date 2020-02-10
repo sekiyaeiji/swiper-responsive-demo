@@ -1,1 +1,1 @@
-require('./_set_swiper')()
+require('./_set_swiper')

@@ -17,7 +17,7 @@ module.exports = {
         loader: 'babel-loader',
         query:{
           presets: ['es2015']
-        }
+        },
       },
       {
         test: /\.js$/,
@@ -25,8 +25,11 @@ module.exports = {
         loader: 'eslint-loader',
         options: {
           configFile: './conf/eslintrc.js'
-        }
-      }
+        },
+      },
+      {
+        exclude: /node_modules\/(?!(dom7|ssr-window|swiper)\/).*/
+      },
     ]
   },
   plugins: [
@@ -37,10 +40,6 @@ module.exports = {
       trailingComma: 'all',
       semi: false,
       bracketSpacing: true
-    }),
-    new webpack.ProvidePlugin({
-      jQuery: 'jquery',
-      $: 'jquery'
     })
   ]
 }
