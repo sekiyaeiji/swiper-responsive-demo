@@ -27,9 +27,6 @@ module.exports = {
           configFile: './conf/eslintrc.js'
         },
       },
-      {
-        exclude: /node_modules\/(?!(dom7|ssr-window|swiper)\/).*/
-      },
     ]
   },
   plugins: [

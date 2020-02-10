@@ -9,6 +9,7 @@
     "build:html": "bin/build_html.sh",
     "build:css": "bin/build_css.sh",
     "build:js": "bin/build_js.sh",
+    "build:copy": "bin/build_copy.sh",
     "build": "bin/build.sh",
     "clean": "bin/clean.sh",
     "watch:image": "chokidar src/img/* -c 'npm run build:image'",
@@ -56,6 +57,7 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
-    "swiper": "^5.3.0"
+    "lodash": "^4.17.15",
+    "swiper": "^5.3.1"
   }
 }
